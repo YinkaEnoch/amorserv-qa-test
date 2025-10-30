@@ -4,18 +4,20 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
     "dev": "npx http-server ./app -p 8080",
-    "test:cypress": "npx cypress run"
+    "test:cypress": "npx cypress run",
+    "test:e2e": "npx mocha tests/selenium/login.test.js"
   },
   "keywords": [],
   "author": "Yinka Enoch Adedokun <adedokunyinkaenoch@gmail.com> (https://github.com/yinkaenoch)",
   "license": "ISC",
   "devDependencies": {
-    "chromedriver": "^142.0.0",
     "cypress": "^15.5.0",
     "http-server": "^14.1.1",
     "mocha": "^11.7.4",
     "selenium-webdriver": "^4.38.0"
+  },
+  "dependencies": {
+    "chromedriver": "^132.0.2"
   }
 }
