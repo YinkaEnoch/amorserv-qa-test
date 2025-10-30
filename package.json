@@ -6,18 +6,16 @@
   "scripts": {
     "dev": "npx http-server ./app -p 8080",
     "test:cypress": "npx cypress run",
-    "test:e2e": "npx mocha tests/selenium/login.test.js"
+    "test:e2e": "npx mocha tests/selenium/*.test.js"
   },
   "keywords": [],
   "author": "Yinka Enoch Adedokun <adedokunyinkaenoch@gmail.com> (https://github.com/yinkaenoch)",
   "license": "ISC",
   "devDependencies": {
+    "chromedriver": "^132.0.2",
     "cypress": "^15.5.0",
     "http-server": "^14.1.1",
     "mocha": "^11.7.4",
     "selenium-webdriver": "^4.38.0"
-  },
-  "dependencies": {
-    "chromedriver": "^132.0.2"
   }
 }
